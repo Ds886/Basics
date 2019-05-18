@@ -1,0 +1,16 @@
+---
+title: "Sample Document"
+header-includes:
+   - \newfontfamily\hebrewfont{Times New Roman}
+   - \let\hebrewfonttt\ttfamily
+   - \usepackage{polyglossia}
+   - \setdefaultlanguage{hebrew}
+   - \setotherlanguage{english}
+output:
+  pdf_document:
+     latex_engine: xelatex
+     highlight: NULL
+bibliography: FirstDocument.bib
+csl: chicago-fullnote-bibliography-with-ibid.csl
+---
+

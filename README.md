@@ -28,9 +28,9 @@ in order to start a new file in shell you can add the provisional script(probabl
 function NewRMD-H ()
 {
 	local FileName=$1
-	cp [path to the template]/RMD_Chicago_Full_Ibid_Hebrew/Default-Hebrew.rmd "./$FileName"
+	cp [path to the template]/Default-Hebrew.rmd "./$FileName"
 
-	cp [path to the template]/RMD_Chicago_Full_Ibid_Hebrew/chicago-fullnote-bibliography-with-ibid.csl ./
+	cp [path to the template]/chicago-fullnote-bibliography-with-ibid.csl ./
 	nvim $FileName
 }
 ```

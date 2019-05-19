@@ -22,3 +22,15 @@ another option in Linux is to use Bicon though it have issue with cancel all the
 
 the style is taken from csl official git, i had some issues with employing both english and hebrew so i just translated the main line.
 
+in order to start a new file in shell you can add the provisional script(probably can be improved by hard coding the path once it is deployed):
+
+```
+function NewRMD-H ()
+{
+	local FileName=$1
+	cp [path to the template]/RMD_Chicago_Full_Ibid_Hebrew/Default-Hebrew.rmd "./$FileName"
+
+	cp [path to the template]/RMD_Chicago_Full_Ibid_Hebrew/chicago-fullnote-bibliography-with-ibid.csl ./
+	nvim $FileName
+}
+```
